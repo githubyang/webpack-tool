@@ -1,7 +1,7 @@
 {
   "name": "react-router",
   "version": "1.0.0",
-  "description": "A complete routing library for React.js",
+  "description": "",
   "files": [
     "*.md",
     "docs",
@@ -24,7 +24,6 @@
     "build-es6": "rimraf es6 && babel ./modules -d es6 --blacklist=es6.modules --ignore '__tests__'",
     "build-umd": "NODE_ENV=production webpack modules/index.js umd/ReactRouter.js",
     "build-min": "NODE_ENV=production webpack -p modules/index.js umd/ReactRouter.min.js",
-    "start": "node server.js",
     "test": "npm run lint && npm run test-node && npm run test-browser",
     "test-browser": "karma start",
     "test-node": "mocha --compilers js:babel-core/register tests.node.js"
@@ -64,6 +63,8 @@
     "react-dom": "^0.14.3",
     "react-static-container": "^1.0.0",
     "react-router": "1.0.0",
+		"react-redux":"1.0.0",
+		"redux":"1.0.0",
     "style-loader": "^0.12.4",
     "webpack": "^1.4.13",
     "webpack-dev-middleware": "^1.2.0",
@@ -71,17 +72,5 @@
 		"html-webpack-plugin":"^2.7.2",
 		"image-webpack-loader":"^1.6.1",
 		"html-webpack-plugin": "^2.8.2"
-  },
-  "tags": [
-    "react",
-    "router"
-  ],
-  "keywords": [
-    "react",
-    "react-component",
-    "routing",
-    "route",
-    "routes",
-    "router"
-  ]
+  }
 }
